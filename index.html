@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Habit tracking</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 
 
@@ -13,7 +14,14 @@
 
 <body>
 
-    <h1>Every morning</h1>
+<div id="navbar">
+    <a href="#morning">Morning</a>
+    <a href="#night">Night</a>
+    <a href="#charts">Charts</a>
+</div>
+
+
+    <h1 id="morning">Every morning</h1>
 
     <div style="--aspect-ratio: 16/9;">
     <iframe
@@ -24,7 +32,7 @@
 
 
 
-
+<a id="night"></a>
     <h1>Every night</h1>
 
     <div style="--aspect-ratio: 16/9;">
@@ -35,7 +43,7 @@
 
 
 
-
+<a id="charts"></a>
     <h1>Charts</h1>
     <div style="--aspect-ratio: 16/9;">
     <iframe
