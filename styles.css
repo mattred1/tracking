@@ -1,6 +1,6 @@
 body {
     background-color: lightblue;
-    margin:0;
+    padding: 4em 0 0 0;
 }
 
 h1  {
@@ -11,40 +11,81 @@ h1  {
 
 
 
-/* Start navbar */
- /* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #333;
+
+
+
+
+.menu {
+    width: 100%;
+    z-index: 99;
+    position: static;
 }
 
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+.menu.sticky {
+    position: fixed;
+    top: 0;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+.menu {
+    padding: 0;
+    margin: 0 0 30px;
+    font-size: 1.5em;
+    background: #343434
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.menu-item {
+    border: none;
+    border-bottom: 5px solid #fff;
+    display: inline-block;
+    padding: 5px 0;
+    margin: 0 15px;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-} 
-/* End navbar  */
+.menu-item:first-child {
+    margin-left: 0;
+}
+
+.menu-item.active,
+.menu-item:hover {
+    border-bottom-color: #0078d7;
+    animation-name: menu-border-fade;
+    animation-duration: .6s;
+    animation-timing-function: ease;
+}
+
+.menu-item.active .menu-link,
+.menu-link:hover {
+    animation-name: menu-link-fade;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    color: #0078d7;
+}
+
+a.menu-link {
+    color: #000;
+    text-decoration: none;
+}
+
+@keyframes menu-link-fade {
+    from {
+        color: #000;
+    }
+    to {
+        color: #0078d7;
+    }
+}
+
+@keyframes menu-border-fade {
+    from {
+        border-color: #fff;
+    }
+    to {
+        border-color: #0078d7;
+    }
+}
+
+
+
 
 
 
