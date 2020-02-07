@@ -1,7 +1,8 @@
 body {
     background-color: lightblue;
-    padding: 4em 0 0 0;
+    padding: 2em 0 0 0;
     margin:  0;
+    width: 100%;
 }
 
 h1  {
@@ -20,18 +21,17 @@ h1  {
     width: 100%;
     z-index: 99;
     position: static;
+    padding: 0 0 0 1em;
+    margin: 0 0 30px;
+    font-size: 1.5em;
+    background: #343434
 }
+
+/* todo: change padding to 0 and add text align center */
 
 .menu.sticky {
     position: fixed;
     top: 0;
-}
-
-.menu {
-    padding: 0;
-    margin: 0 0 30px;
-    font-size: 1.5em;
-    background: #343434
 }
 
 .menu-item {
@@ -63,13 +63,13 @@ h1  {
 }
 
 a.menu-link {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 }
 
 @keyframes menu-link-fade {
     from {
-        color: #000;
+        color: #000000;
     }
     to {
         color: #0078d7;
