@@ -21,13 +21,12 @@ h1  {
     width: 100%;
     z-index: 99;
     position: static;
-    padding: 0 0 0 1em;
     margin: 0 0 30px;
     font-size: 1.5em;
-    background: #343434
+    background: #343434;
+    padding: 0;
+    text-align: center;
 }
-
-/* todo: change padding to 0 and add text align center */
 
 .menu.sticky {
     position: fixed;
@@ -118,3 +117,20 @@ a.menu-link {
 }
 /* End make iFrames responsive */
 
+
+
+
+
+
+
+/* Media Queries */
+@media (min-width: 900px) {
+    
+.menu{
+    padding: 0 0 0 1em;
+    text-align: left;
+}
+
+
+
+}
